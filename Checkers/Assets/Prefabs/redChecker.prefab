@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  movePlate: {fileID: 0}
+  movePlate: {fileID: 486251239390034492, guid: 9caf97ac67f07e04bba6030618564328,
+    type: 3}
   redChecker: {fileID: 21300000, guid: 25c5e160405d23e4ba353c4c5966767d, type: 3}
   redKingChecker: {fileID: 21300000, guid: 7c2022927c3b6be4a85d829c8d8e88d5, type: 3}
   whiteChecker: {fileID: 21300000, guid: 368d60c1e84036b45bbccbdda7ae1998, type: 3}

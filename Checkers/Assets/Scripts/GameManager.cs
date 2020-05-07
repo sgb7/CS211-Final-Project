@@ -59,6 +59,14 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        for(int i = 0; i < positions.GetLength(0); i++)
+        {
+            for(int j = 0; j < positions.GetLength(1); j++)
+            {
+                SetPositionEmpty(i, j);
+            }
+        }
+
         enemy = new GameObject[] { Create("whiteChecker", 1, 7), Create("whiteChecker", 3, 7), Create("whiteChecker", 5, 7), Create("whiteChecker", 7, 7), Create("whiteChecker", 0, 6),
                                    Create("whiteChecker", 2, 6), Create("whiteChecker", 4, 6), Create("whiteChecker", 6, 6), Create("whiteChecker", 1, 5), Create("whiteChecker", 3, 5),
                                    Create("whiteChecker", 5, 5), Create("whiteChecker", 7, 5) };
