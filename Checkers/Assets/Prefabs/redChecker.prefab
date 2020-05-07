@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7390291384259249542}
   - component: {fileID: 8188373729346567594}
+  - component: {fileID: 5580220905398586752}
   m_Layer: 0
   m_Name: redChecker
   m_TagString: Untagged
@@ -81,3 +82,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5580220905398586752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314575696761478335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6cad6795f0a7242be38bf7fa1603e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  redChecker: {fileID: 21300000, guid: 25c5e160405d23e4ba353c4c5966767d, type: 3}
+  redKingChecker: {fileID: 21300000, guid: 7c2022927c3b6be4a85d829c8d8e88d5, type: 3}
+  whiteChecker: {fileID: 21300000, guid: 368d60c1e84036b45bbccbdda7ae1998, type: 3}
+  whiteKingChecker: {fileID: 21300000, guid: 1783361960571d54e9b47df4a6f433c0, type: 3}

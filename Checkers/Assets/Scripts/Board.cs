@@ -4,5 +4,15 @@ using UnityEngine;
 
 public class Board : MonoBehaviour
 {
-    public Checker[,] pieces = new Checker[8, 8];
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
