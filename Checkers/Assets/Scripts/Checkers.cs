@@ -21,11 +21,11 @@ public class Checkers : MonoBehaviour
         float x = xPos;
         float y = yPos;
 
-        x = x * 0.66f;
-        y = y * 0.66f;
+        x = x * 1.1f;
+        y = y * 1.1f;
 
-        x += -2.3f;
-        y += -2.3f;
+        x += -3.8f;
+        y += -3.8f;
 
         this.transform.position = new Vector3(x, y, -1.0f);
     }

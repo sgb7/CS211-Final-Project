@@ -19,18 +19,31 @@ public class GameManager : MonoBehaviour
 
     public GameObject Create(string name, int x, int y)
     {
+        GameObject obj = Instantiate(piece, new Vector3(0, 0, -1), Quaternion.identity);
+        Checkers checkers = obj.GetComponent<Checkers>();
+        checkers.name = name;
+        checkers.setXPos(x);
+        checkers.setYPos(y);
+        checkers.Activate();
+        return obj;
+    }
 
+    public void SetPosition(GameObject obj)
+    {
+        Checkers checkers = obj.GetComponent<Checkers>();
+
+        positions[checkers.getXPos(), checkers.getYPos()] = obj;
     }
 
     void Start()
     {
-        player = new GameObject[] { Create("whiteChecker", 0, 7), Create("whiteChecker", 2, 7), Create("whiteChecker", 4, 7), Create("whiteChecker", 6, 7), Create("whiteChecker", 1, 6),
-                                   Create("whiteChecker", 3, 6), Create("whiteChecker", 5, 6), Create("whiteChecker", 7, 6), Create("whiteChecker", 0, 5), Create("whiteChecker", 2, 5),
-                                   Create("whiteChecker", 4, 5), Create("whiteChecker", 6, 5) };
+        enemy = new GameObject[] { Create("whiteChecker", 1, 7), Create("whiteChecker", 3, 7), Create("whiteChecker", 5, 7), Create("whiteChecker", 7, 7), Create("whiteChecker", 0, 6),
+                                   Create("whiteChecker", 2, 6), Create("whiteChecker", 4, 6), Create("whiteChecker", 6, 6), Create("whiteChecker", 1, 5), Create("whiteChecker", 3, 5),
+                                   Create("whiteChecker", 5, 5), Create("whiteChecker", 7, 5) };
 
-        enemy = new GameObject[] { Create("redChecker", 1, 0), Create("redChecker", 3, 0), Create("redChecker", 5, 0), Create("redChecker", 7, 0), Create("redChecker", 0, 1),
-                                   Create("redChecker", 2, 1), Create("redChecker", 4, 1), Create("redChecker", 6, 1), Create("redChecker", 1, 2), Create("redChecker", 3, 2),
-                                   Create("redChecker", 5, 2), Create("redChecker", 7, 2) };
+        player = new GameObject[] { Create("redChecker", 0, 0), Create("redChecker", 2, 0), Create("redChecker", 4, 0), Create("redChecker", 6, 0), Create("redChecker", 1, 1),
+                                   Create("redChecker", 3, 1), Create("redChecker", 5, 1), Create("redChecker", 7, 1), Create("redChecker", 0, 2), Create("redChecker", 2, 2),
+                                   Create("redChecker", 4, 2), Create("redChecker", 6, 2) };
 
         for(int i = 0; i < player.Length; i++)
         {
