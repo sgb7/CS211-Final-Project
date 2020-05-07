@@ -35,6 +35,28 @@ public class GameManager : MonoBehaviour
         positions[checkers.getXPos(), checkers.getYPos()] = obj;
     }
 
+    public void SetPositionEmpty(int x, int y)
+    {
+        positions[x, y] = null;
+    }
+
+    public GameObject GetPosition(int x, int y)
+    {
+        return positions[x, y];
+    }
+
+    public bool isOnBoard(int x, int y)
+    {
+        if(x < 0 || y < 0 || x >= positions.GetLength(0) || y >= positions.GetLength(1))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
     void Start()
     {
         enemy = new GameObject[] { Create("whiteChecker", 1, 7), Create("whiteChecker", 3, 7), Create("whiteChecker", 5, 7), Create("whiteChecker", 7, 7), Create("whiteChecker", 0, 6),
