@@ -52,4 +52,24 @@ public class Checkers : MonoBehaviour
                 break;
         }
     }
+
+    public int getXPos()
+    {
+        return xPos;
+    }
+
+    public int getYPos()
+    {
+        return yPos;
+    }
+
+    public void setXPos(int x)
+    {
+        xPos = x;
+    }
+
+    public void setYPos(int y)
+    {
+        yPos = y;
+    }
 }
