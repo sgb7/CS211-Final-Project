@@ -376,3 +376,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piece: {fileID: 4314575696761478335, guid: 8377345e63291b940ba08bc42fa9a1a1, type: 3}
+  movePlate: {fileID: 486251239390034492, guid: 9caf97ac67f07e04bba6030618564328,
+    type: 3}

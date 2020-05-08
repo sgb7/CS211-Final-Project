@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Dynamic;
 using UnityEngine;
@@ -25,8 +26,12 @@ public class ClickManager : MonoBehaviour
 
             if(hit.collider != null)
             {
-                //TODO
+                string name = hit.collider.gameObject.name;
+                GameObject obj = GameObject.Find(name);
+                gameManager.FindFreeSpaces(obj);
             }
         }
     }
+
+
 }
