@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8188373729346567594}
   - component: {fileID: 5580220905398586752}
   - component: {fileID: 1790569702927478015}
+  - component: {fileID: 1119078135833648678}
   m_Layer: 0
   m_Name: redChecker
   m_TagString: Untagged
@@ -100,7 +101,6 @@ MonoBehaviour:
   redKingChecker: {fileID: 21300000, guid: 7c2022927c3b6be4a85d829c8d8e88d5, type: 3}
   whiteChecker: {fileID: 21300000, guid: 368d60c1e84036b45bbccbdda7ae1998, type: 3}
   whiteKingChecker: {fileID: 21300000, guid: 1783361960571d54e9b47df4a6f433c0, type: 3}
-  movePlate: {fileID: 21300000, guid: e442ebc19fa5cc94da81353a0a9aa87c, type: 3}
 --- !u!61 &1790569702927478015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,3 +127,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &1119078135833648678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314575696761478335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2496cb01001b8e47b07b12b3864dc80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
