@@ -6,7 +6,7 @@ using UnityEngine;
 public class Checkers : MonoBehaviour
 {
     public GameObject controller;
-    public GameObject movePlate;
+    //public GameObject movePlate;
 
     private int xPos = -1;
     private int yPos = -1;

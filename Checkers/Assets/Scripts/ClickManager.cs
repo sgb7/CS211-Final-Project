@@ -9,6 +9,8 @@ public class ClickManager : MonoBehaviour
     public GameObject subject;
     public GameObject movePlate;
 
+    public Sprite redKingChecker;
+
     Checkers checkers;
     GameManager gameManager;
 
@@ -23,7 +25,7 @@ public class ClickManager : MonoBehaviour
 
             if(hit.collider != null)
             {
-                Instantiate(movePlate, new Vector3(0, 0, -1), Quaternion.identity);
+                //TODO
             }
         }
     }
