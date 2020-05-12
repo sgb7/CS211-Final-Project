@@ -6,7 +6,14 @@ using UnityEngine;
 
 public class Board : MonoBehaviour
 {
-    public CheckerPiece[,] pieces = new CheckerPiece[8, 8];
+    
+    
+    
+    
+    
+    
+    
+    /*public CheckerPiece[,] pieces = new CheckerPiece[8, 8];
     public GameObject redCheckerPrefab;
     public GameObject whiteCheckerPrefab;
 
@@ -32,5 +39,5 @@ public class Board : MonoBehaviour
     void Start()
     {
         GenerateBoard();
-    }
+    }*/
 }
