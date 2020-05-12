@@ -33,7 +33,9 @@ public class ClickManager : MonoBehaviour
                 GenerateMovePlates(obj);*/
 
                 //Test
-                Instantiate(movePlate, new Vector3(0, 0, -1), Quaternion.identity);
+                float x = hit.collider.gameObject.transform.position.x;
+                float y = hit.collider.gameObject.transform.position.y;
+                Instantiate(movePlate, new Vector3(x, y, -1), Quaternion.identity);
             }
         }
         else if(Input.GetMouseButtonUp(0))
