@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Security.Cryptography;
 //using System.Security.Policy;
 using UnityEngine;
 
@@ -21,7 +22,6 @@ public class Checkers : MonoBehaviour
     {
         float x = xPos;
         float y = yPos;
-
         x = x * 1.1f;
         y = y * 1.1f;
 
@@ -29,6 +29,10 @@ public class Checkers : MonoBehaviour
         y += -3.8f;
 
         this.transform.position = new Vector3(x, y, -1.0f);
+
+        /*this.transform.position = new Vector3(Mathf.Round(xPos),
+                                     Mathf.Round(yPos),
+                                     -1.0f);*/
     }
 
     public void Activate()

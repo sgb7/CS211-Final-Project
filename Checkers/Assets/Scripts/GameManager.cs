@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void turns()
     {
-        //TODO
+        // How do simulate taking turns?
     }
 
     void Start()
@@ -93,8 +93,7 @@ public class GameManager : MonoBehaviour
     {
         float x = obj.GetComponent<Transform>().position.x;
         float y = obj.GetComponent<Transform>().position.y;
-
-        Instantiate(movePlate, new Vector3(x, y, -1), Quaternion.identity);
+        // Unfinished
     }
 
    

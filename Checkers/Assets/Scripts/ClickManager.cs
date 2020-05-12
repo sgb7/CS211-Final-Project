@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Dynamic;
+using System.Runtime;
 using UnityEngine;
 
 public class ClickManager : MonoBehaviour
 {
-    public GameObject subject;
     public GameObject movePlate;
-
-    public Sprite redKingChecker;
 
     Checkers checkers;
     GameManager gameManager;
+
+    void GenerateMovePlates(GameObject obj)
+    {
+        //gameMangager.FindFreeSpaces(obj);
+    }
 
     void Update()
     {
@@ -26,10 +29,16 @@ public class ClickManager : MonoBehaviour
 
             if(hit.collider != null)
             {
-                string name = hit.collider.gameObject.name;
-                GameObject obj = GameObject.Find(name);
-                gameManager.FindFreeSpaces(obj);
+                /*GameObject obj = hit.collider.gameObject;
+                GenerateMovePlates(obj);*/
+
+                //Test
+                Instantiate(movePlate, new Vector3(0, 0, -1), Quaternion.identity);
             }
+        }
+        else if(Input.GetMouseButtonUp(0))
+        {
+            Destroy(GameObject.Find("MovePlate(Clone)"));
         }
     }
 

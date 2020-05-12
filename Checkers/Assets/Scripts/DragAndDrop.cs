@@ -10,8 +10,11 @@ public class DragAndDrop : MonoBehaviour
 
     void OnMouseDrag()
     {
-        Vector3 mouseposition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
-        Vector3 objPosition = Camera.main.ScreenToWorldPoint(mouseposition);
-        transform.position = objPosition;
+        if (this.gameObject.name != "whiteChecker")
+        {
+            Vector3 mouseposition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
+            Vector3 objPosition = Camera.main.ScreenToWorldPoint(mouseposition);
+            transform.position = objPosition;
+        }
     }
 }
