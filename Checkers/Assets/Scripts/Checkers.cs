@@ -64,7 +64,8 @@ public class Checkers : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-        //I can't seem to make it so the white checkers will destroy the red checkers when selected. When I try both checkers just end up destroyed.
+        // Red checkers will destroy white checkers when they collide.
+        // I can't seem to make it so the white checkers will destroy the red checkers when selected. When I try both checkers just end up destroyed.
     }
 
     public int getXPos()
