@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+//using System.Security.Policy;
 using UnityEngine;
 
 public class Checkers : MonoBehaviour
@@ -51,6 +52,15 @@ public class Checkers : MonoBehaviour
                 this.GetComponent<SpriteRenderer>().sprite = whiteKingChecker;
                 break;
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(gameObject.name == "redChecker" && collision.gameObject.name == "whiteChecker")
+        {
+            Destroy(collision.gameObject);
+        }
+        //I can't seem to make it so the white checkers will destroy the red checkers when selected. When I try both checkers just end up destroyed.
     }
 
     public int getXPos()

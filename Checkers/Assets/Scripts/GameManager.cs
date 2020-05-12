@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void turns()
+    {
+        //TODO
+    }
+
     void Start()
     {
         for(int i = 0; i < positions.GetLength(0); i++)
